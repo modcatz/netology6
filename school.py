@@ -124,9 +124,9 @@ worst_student.rate_lecture(other_lecturer,'Python',7)
 # print(some_lecturer > other_lecturer)
 
 def course_average_grade(gradees: list,course_name: str):
-    avg_per_course = []
+    avg_per_person = []
     for gradee in gradees:
-        avg_per_course += [(sum(gradee.grades[course_name]) / len(gradee.grades[course_name]))]
+        avg_per_person += [(sum(gradee.grades[course_name]) / len(gradee.grades[course_name]))]
     return round(sum(avg_per_course) / len(avg_per_course), 1)
 #добавить проверку учится ли на курсе, является ли студентом, есть ли оценки
 
